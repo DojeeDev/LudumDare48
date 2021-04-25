@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://EndScreen.tscn" type="PackedScene" id=1]
+[ext_resource path="res://SpaceBoxBackground.tscn" type="PackedScene" id=2]
+
+[node name="End" instance=ExtResource( 2 )]
+
+[node name="EndScreen" parent="." index="5" instance=ExtResource( 1 )]

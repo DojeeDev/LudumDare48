@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/CameraGuide_DOWN-Emma.mp3-19012474fdc00fd2c984d7cfdf57d445.mp3str"
+
+[deps]
+
+source_file="res://Assets/VoiceOvers/CameraGuide_DOWN-Emma.mp3"
+dest_files=[ "res://.import/CameraGuide_DOWN-Emma.mp3-19012474fdc00fd2c984d7cfdf57d445.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

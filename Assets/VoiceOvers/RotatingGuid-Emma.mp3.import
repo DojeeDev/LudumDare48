@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/RotatingGuid-Emma.mp3-612208ec16d21b50f405ea1179d7f848.mp3str"
+
+[deps]
+
+source_file="res://Assets/VoiceOvers/RotatingGuid-Emma.mp3"
+dest_files=[ "res://.import/RotatingGuid-Emma.mp3-612208ec16d21b50f405ea1179d7f848.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GoalGuide-Emma.mp3-3c14fe0ef62d24883f553224cc71b072.mp3str"
+
+[deps]
+
+source_file="res://Assets/VoiceOvers/GoalGuide-Emma.mp3"
+dest_files=[ "res://.import/GoalGuide-Emma.mp3-3c14fe0ef62d24883f553224cc71b072.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

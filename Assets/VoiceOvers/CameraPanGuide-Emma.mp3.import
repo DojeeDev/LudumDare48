@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/CameraPanGuide-Emma.mp3-910d8c4b55ccfa83a9c131d8420b62c3.mp3str"
+
+[deps]
+
+source_file="res://Assets/VoiceOvers/CameraPanGuide-Emma.mp3"
+dest_files=[ "res://.import/CameraPanGuide-Emma.mp3-910d8c4b55ccfa83a9c131d8420b62c3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

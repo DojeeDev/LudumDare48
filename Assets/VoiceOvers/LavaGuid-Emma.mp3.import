@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LavaGuid-Emma.mp3-5f96c8ca5b5edc372eed7d9276e16dba.mp3str"
+
+[deps]
+
+source_file="res://Assets/VoiceOvers/LavaGuid-Emma.mp3"
+dest_files=[ "res://.import/LavaGuid-Emma.mp3-5f96c8ca5b5edc372eed7d9276e16dba.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
