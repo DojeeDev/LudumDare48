@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Zoom.mp3-a0a8f1867056ee7d8e86797ebd47f066.mp3str"
+
+[deps]
+
+source_file="res://Assets/VoiceOvers/Zoom.mp3"
+dest_files=[ "res://.import/Zoom.mp3-a0a8f1867056ee7d8e86797ebd47f066.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

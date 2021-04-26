@@ -18,6 +18,8 @@ radius = 0.5
 collision_layer = 2
 physics_material_override = SubResource( 1 )
 gravity_scale = 20.0
+contacts_reported = 3
+contact_monitor = true
 script = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]

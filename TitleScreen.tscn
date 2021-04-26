@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/Fonts/BoldRoboto.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Assets/Fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://TitleScreen.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -12,6 +13,7 @@ size = 80
 font_data = ExtResource( 2 )
 
 [node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource( 3 )
 
 [node name="UI" type="Control" parent="."]
 anchor_right = 1.0
@@ -22,10 +24,13 @@ __meta__ = {
 
 [node name="GameName" type="Label" parent="UI"]
 margin_left = -1.0
-margin_right = 390.0
-margin_bottom = 82.0
+margin_right = 465.0
+margin_bottom = 118.0
 custom_fonts/font = ExtResource( 1 )
-text = " Game Name"
+text = "Astral Ball"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Buttons" type="Control" parent="UI"]
 anchor_top = 0.5
@@ -77,3 +82,7 @@ text = "Credits"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="pressed" from="UI/Buttons/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="UI/Buttons/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="UI/Buttons/Credits" to="." method="_on_Credits_pressed"]

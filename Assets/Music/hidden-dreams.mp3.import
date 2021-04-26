@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hidden-dreams.mp3-70b8b155c1e9029f17bfc8ea84833454.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/hidden-dreams.mp3"
+dest_files=[ "res://.import/hidden-dreams.mp3-70b8b155c1e9029f17bfc8ea84833454.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

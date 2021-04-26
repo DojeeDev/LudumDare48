@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BallRolling.mp3-85c6900e6aca5958858bcb36f11a049e.mp3str"
+
+[deps]
+
+source_file="res://Assets/SFX/BallRolling.mp3"
+dest_files=[ "res://.import/BallRolling.mp3-85c6900e6aca5958858bcb36f11a049e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

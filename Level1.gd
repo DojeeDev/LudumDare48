@@ -17,12 +17,24 @@ var desired_zoom = 0
 var zoomed = false
 
 
+var camera_down = false
+var camera_pan = false
+var rotate = false
+var lava = false
+var goal = false
+var zoom = false
+
 export var save = {
 	spawn = Vector3(0,58,0),
 	camera_pos = Vector3(-55,85,0),
 	camera_holder_rotation = Vector3.ZERO
 }
 export var max_zoom = -2500
+
+func _ready():
+	Sound.song(Sound.main)
+	Sound.talk(Sound.camera_up)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func change_zoom():
 	if !zoomed:
@@ -37,9 +49,15 @@ func zoom(delta):
 		camera.transform.origin.x = lerp(camera.transform.origin.x, save.camera_pos.x + desired_zoom*delta, 0.2)
 
 
-
 func tutorial():
-	pass
+	if camera.transform.origin.y >= 65and !goal:
+		goal = true
+		Sound.talk(Sound.goal)
+	elif camera.transform.origin.y >= 65 and !rotate:
+		rotate = true
+		Sound.talk(Sound.rotating)
+
+
 
 
 
@@ -62,6 +80,7 @@ func _unhandled_input(event):
 
 
 func _physics_process(delta):
+	tutorial()
 	zoom(delta)
 	
 	var rot_dir = Vector3.ZERO
@@ -100,7 +119,9 @@ func restart():
 
 
 func _on_BallBoxMap1_check_point():
-	print(2)
+	if !lava:
+		lava = true
+		Sound.talk(Sound.lava)
 	save.spawn = Vector3(-20,35,-20)
 	save.camera_pos = Vector3(-55,48,0)
 
@@ -108,3 +129,32 @@ func _on_BallBoxMap1_check_point():
 
 func _on_OutOfBounds_body_entered(body):
 	restart()
+
+
+func _on_Goal_body_entered(body):
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	SceneChanger.change_scene("res://End.tscn")
+
+
+func _on_firstfloor_body_entered(body):
+	if !camera_pan:
+		camera_pan = true
+		Sound.talk(Sound.camera_pan)
+
+
+
+
+func _on_BottomFloor_body_entered(body):
+	$Timer.start()
+
+
+func _on_Timer_timeout():
+	if !camera_down:
+		camera_down = true
+		Sound.talk(Sound.camera_down)
+
+
+func _on_ZoomBoxTell_body_entered(body):
+	if !zoom:
+		zoom = true
+		Sound.talk(Sound.zoom)
